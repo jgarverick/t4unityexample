@@ -1,0 +1,10 @@
+﻿<#@ output extension="txt" #>
+<#@ parameter name="instanceName" type="System.String" #>
+<#@ parameter name="dbServer" type="System.String" #>
+<#@ parameter name="project" type="System.String" #>
+<?xml version="1.0"?>
+<configuration>
+<connectionStrings>
+<add name="Entities" connectionString="metadata=res://*/<#=project#>.csdl|res://*/<#=project#>.ssdl|res://*/<#=project#>.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=<#= dbServer#>;Initial Catalog=<#=instanceName#>;Integrated Security=True;MultipleActiveResultSets=True&quot;" providerName="System.Data.EntityClient" />
+</connectionStrings>
+</configuration>

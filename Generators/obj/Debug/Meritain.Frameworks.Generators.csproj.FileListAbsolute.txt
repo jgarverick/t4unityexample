@@ -1,0 +1,9 @@
+C:\Users\josh.garverick\Desktop\DomTester\DomTester\ServiceDom\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\josh.garverick\Desktop\DomTester\DomTester\ServiceDom\bin\Debug\Meritain.Frameworks.Generators.dll
+C:\Users\josh.garverick\Desktop\DomTester\DomTester\ServiceDom\bin\Debug\Meritain.Frameworks.Generators.pdb
+C:\Users\josh.garverick\Desktop\DomTester\DomTester\ServiceDom\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\josh.garverick\Desktop\DomTester\DomTester\ServiceDom\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\josh.garverick\Desktop\DomTester\DomTester\ServiceDom\bin\Debug\Microsoft.Practices.Unity.pdb
+C:\Users\josh.garverick\Desktop\DomTester\DomTester\ServiceDom\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\josh.garverick\Desktop\DomTester\DomTester\ServiceDom\obj\Debug\Meritain.Frameworks.Generators.dll
+C:\Users\josh.garverick\Desktop\DomTester\DomTester\ServiceDom\obj\Debug\Meritain.Frameworks.Generators.pdb

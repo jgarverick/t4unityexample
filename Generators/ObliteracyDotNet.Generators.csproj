@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DAAF06FA-E39E-43DF-8C27-945DC165FD7F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ObliteracyDotNet.Generators</RootNamespace>
+    <AssemblyName>ObliteracyDotNet.Generators</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\IProjectTemplate.cs" />
+    <Compile Include="Templates\ConfigFiles\EdmxAppConfig.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EdmxAppConfig.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\ConfigFiles\EdmxAppConfig.tt.cs" />
+    <Compile Include="Templates\ConfigFiles\EdmGenCommandLine.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EdmGenCommandLine.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\ConfigFiles\EdmGenCommandLine.tt.cs" />
+    <Compile Include="Templates\ConfigFiles\Edmx.tt.cs" />
+    <Compile Include="Templates\ConfigFiles\EdmxFile.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EdmxFile.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Generators\EFGenerator.cs" />
+    <Compile Include="Generators\PatternResolver.cs" />
+    <Compile Include="PatternBuilders\CustomPatternBuilder.cs" />
+    <Compile Include="Base\IPatternBuilder.cs" />
+    <Compile Include="Base\IPatternTemplate.cs" />
+    <Compile Include="Base\PatternBuilderTypeCodes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structures\DatabaseMetadataStore.cs" />
+    <Compile Include="Structures\MethodParam.cs" />
+    <Compile Include="Structures\MethodStruct.cs" />
+    <Compile Include="Structures\PatternBuilderConfig.cs" />
+    <Compile Include="Templates\Objects\BusinessObject.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BusinessObject.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\Partials\BusinessObject.tt.cs" />
+    <Compile Include="Templates\Partials\Contract.tt.cs" />
+    <Compile Include="Templates\Objects\Contract1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Contract.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\Partials\ProjectTemplate.tt.cs" />
+    <Compile Include="Templates\Projects\ProjectTemplate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectTemplate.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Templates\ConfigFiles\EdmGenCommandLine.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>EdmGenCommandLine.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\ConfigFiles\EdmxAppConfig.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>EdmxAppConfig.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Objects\BusinessObject.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>BusinessObject.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Objects\Contract.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>Contract1.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Templates\ConfigFiles\EdmxFile.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>EdmxFile.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Templates\Projects\ProjectTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>ProjectTemplate.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

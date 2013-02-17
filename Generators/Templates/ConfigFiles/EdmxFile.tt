@@ -1,0 +1,40 @@
+﻿<#@ output extension="txt" #>
+<#@ parameter name="SSDL" type="System.String" #>
+<#@ parameter name="CSDL" type="System.String" #>
+<#@ parameter name="MSL" type="System.String" #>
+<?xml version="1.0"?>
+  <edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- EF Runtime content -->
+    <edmx:Runtime>
+      <!-- SSDL content -->
+      <edmx:StorageModels>
+        <#= SSDL #>
+      </edmx:StorageModels>
+      <!-- CSDL content -->
+      <edmx:ConceptualModels>
+        <#= CSDL #>
+      </edmx:ConceptualModels>
+      <!-- C-S mapping content -->
+      <edmx:Mappings>
+        <#= MSL #>
+      </edmx:Mappings>
+    </edmx:Runtime>
+    <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+    <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+      <edmx:Connection>
+        <DesignerInfoPropertySet>
+          <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+        </DesignerInfoPropertySet>
+      </edmx:Connection>
+      <edmx:Options>
+        <DesignerInfoPropertySet>
+          <DesignerProperty Name="ValidateOnBuild" Value="true" />
+          <DesignerProperty Name="EnablePluralization" Value="True" />
+        </DesignerInfoPropertySet>
+      </edmx:Options>
+      <!-- Diagram content (shape and connector positions) -->
+      <edmx:Diagrams>
+        <Diagram Name="Model1" />
+      </edmx:Diagrams>
+    </edmx:Designer>
+  </edmx:Edmx>

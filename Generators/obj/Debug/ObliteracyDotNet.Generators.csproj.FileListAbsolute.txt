@@ -1,0 +1,9 @@
+C:\Users\Josh\Dropbox\Code\T4UnityExample\Generators\bin\Debug\ObliteracyDotNet.Generators.dll
+C:\Users\Josh\Dropbox\Code\T4UnityExample\Generators\bin\Debug\ObliteracyDotNet.Generators.pdb
+C:\Users\Josh\Dropbox\Code\T4UnityExample\Generators\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Josh\Dropbox\Code\T4UnityExample\Generators\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Josh\Dropbox\Code\T4UnityExample\Generators\bin\Debug\Microsoft.Practices.Unity.pdb
+C:\Users\Josh\Dropbox\Code\T4UnityExample\Generators\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Josh\Dropbox\Code\T4UnityExample\Generators\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Josh\Dropbox\Code\T4UnityExample\Generators\obj\Debug\ObliteracyDotNet.Generators.dll
+C:\Users\Josh\Dropbox\Code\T4UnityExample\Generators\obj\Debug\ObliteracyDotNet.Generators.pdb

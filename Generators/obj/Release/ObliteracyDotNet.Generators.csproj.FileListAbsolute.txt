@@ -1,0 +1,9 @@
+C:\Users\Josh\Dropbox\Code\Generators\DomTester\ServiceDom\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Josh\Dropbox\Code\Generators\DomTester\ServiceDom\bin\Release\Microsoft.Practices.Unity.dll
+C:\Users\Josh\Dropbox\Code\Generators\DomTester\ServiceDom\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Josh\Dropbox\Code\Generators\DomTester\ServiceDom\bin\Release\Microsoft.Practices.Unity.pdb
+C:\Users\Josh\Dropbox\Code\Generators\DomTester\ServiceDom\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Josh\Dropbox\Code\Generators\DomTester\ServiceDom\bin\Release\ObliteracyDotNet.Generators.dll
+C:\Users\Josh\Dropbox\Code\Generators\DomTester\ServiceDom\bin\Release\ObliteracyDotNet.Generators.pdb
+C:\Users\Josh\Dropbox\Code\Generators\DomTester\ServiceDom\obj\Release\ObliteracyDotNet.Generators.dll
+C:\Users\Josh\Dropbox\Code\Generators\DomTester\ServiceDom\obj\Release\ObliteracyDotNet.Generators.pdb

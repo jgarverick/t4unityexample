@@ -1,0 +1,7 @@
+﻿<#@ output extension="txt" #>
+<#@ parameter name="namespace" type="System.String" #>
+<#@ parameter name="project" type="System.String" #>
+<#@ parameter name="instanceName" type="System.String" #>
+<#@ parameter name="dbServer" type="System.String" #>
+<#@ parameter name="containerName" type="System.String" #>
+/mode:FullGeneration /project:<#=project#> /provider:System.Data.SqlClient /connectionstring:"server=<#=dbServer#>;Integrated Security=True;database=<#=instanceName#>" /namespace:<#=namespace#> /entitycontainer:<#=containerName#> /language:CSharp /pluralize

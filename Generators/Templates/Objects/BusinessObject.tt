@@ -1,0 +1,17 @@
+﻿<#@ output extension=".cs" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System" #>
+<#@ parameter name="namespace" type="System.String" #>
+<#@ parameter name="className" type="System.String" #>
+<#@ parameter name="columns" type="System.Data.DataTable" #>
+
+namespace <#=namespace#>.Business 
+{
+	public partial class <#=className#>
+	{
+<# foreach(System.Data.DataRow row in columns.Rows) { #>
+		public <#= row[2].ToString() #> <#= row[1].ToString() #> { get; set; }
+<# } #>
+	}
+
+}
